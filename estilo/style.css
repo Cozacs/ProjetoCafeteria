@@ -73,7 +73,7 @@ header {
 .conteudo-texto {
     background-color: var(--cor1);
     margin: auto;
-    width: 80vw;
+    width: 800px;
 }
 
 .conteudo-texto div {
