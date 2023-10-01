@@ -19,8 +19,10 @@
     font-family: 'Oswald', sans-serif;/*cabeçalho, titulos*/
 }
 
-body {
+body, html {
+    width: 98vw;
     height: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -30,11 +32,24 @@ header {
 
 #cabecalho {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     background-color: var(--cor3);
-    width: 98vw;
+    width: 100%;
     height: 100px;
+}
+
+#cabecalho div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+}
+
+#cabecalho menu {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #cabecalho div img {
@@ -56,7 +71,7 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
     box-sizing: border-box;
-    width: 98vw;
+    width: 100%;
     height: 600px;
     display: flex;
     justify-content: center;
@@ -76,6 +91,7 @@ header {
     margin: auto;
     padding: 10px;
     min-width: 150px;
+    width: 100%;
     max-width: 800px;
 }
 
@@ -104,7 +120,7 @@ header {
 }
 
 .conteudo-imagem {
-    width: 98vw;
+    width: 100%;
 }
 
 #primeira-imagem {
@@ -131,6 +147,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-width: 150px;
+    width: 100%;
 }
 
 #contato h3 {
@@ -140,7 +158,9 @@ header {
     color: var(--cor1);
     font-family: 'Oswald', sans-serif;
     font-weight: 100;
-    width: 400px;
+    padding: 0px 20px;
+    min-width: 150px;
+    width: 100%;
 }
 
 #contato iframe {
@@ -152,9 +172,11 @@ header {
     font-size: 14px;
     color: var(--cor1);
     text-shadow: 2px 2px 3px black;
-    width: 400px;
     background-color: var(--cor3);
     font-family: 'Oswald', sans-serif;
+    padding: 0px 20px;
+    min-width: 150px;
+    width: 100%;
 }
 
 .conteudo-imagem div {
@@ -182,7 +204,13 @@ header {
     background-size: cover; 
     background-position: center center;
     text-align: center;
-    height: 600px;
+    padding: 0px 20px;
+    min-width: 150px;
+    width: 100%;
+}
+
+#horario div {
+    height: 100%;
 }
 
 #horario h2 {
@@ -202,21 +230,29 @@ header {
 
 .funcionamento div {
     height: 1px;
-    width: 600px;
+    padding: 0px 20px;
+    min-width: 150px;
+    width: 100%;
     margin: 0 5px;
     background-color: var(--cor4);
 }
 
 footer {
+    display: block;
+    width: 100vw;
+}
+
+footer div{
     position: relative;
-    padding: 20px 0;
+    padding: 20px 0 80px 0;
     height: 100px;
+    width: 100%;
     font-weight: 600;
+    margin: 0px;
     font-family: "Lato", sans-serif;
     text-align: center;
     background-color: #000000;
     color: #fff;
-
 }
 
 footer span {
@@ -230,10 +266,10 @@ footer a {
     position: absolute;
     bottom: 80px;
     right: 50px;
-
     background-image: url("../imagem/seta-para-cima.png");
     background-position: center;
     background-size: cover;
     background-color: #c4a47c;
     border-radius: 50%;
 }
+
