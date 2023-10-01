@@ -64,7 +64,8 @@ header {
 }
 
 #banner div h1 {
-    font-size: 50px;
+    font-size: clamp(30px, 1.5em, 50px);
+    text-align: center;
     font-weight: normal;
     color: var(--cor1);
     font-family: 'Fraunces', serif;
@@ -73,7 +74,9 @@ header {
 .conteudo-texto {
     background-color: var(--cor1);
     margin: auto;
-    width: 800px;
+    padding: 10px;
+    min-width: 150px;
+    max-width: 800px;
 }
 
 .conteudo-texto div {
